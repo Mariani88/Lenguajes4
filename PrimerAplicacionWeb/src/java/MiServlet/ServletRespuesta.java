@@ -40,11 +40,13 @@ public class ServletRespuesta extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ServletRespuesta</title>");            
+            out.println("<title>Servlet ServletRespuesta</title>");      
+            out.println("<link rel='stylesheet' type='text/css' href='ServletCSS.css'/>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<p>Tu nombre es:</p>" + nombre);
-            out.println("<p>tu apellido es:</p>" + apellido);
+            out.println("<p>Tu nombre es:  "+ nombre + "</p>" );
+            out.println("<p>Tu apellido es:  "+ apellido + "</p>" );
+            out.println("<img src='sonrie.png'>");
             out.println("</body>");
             out.println("</html>");
         }
